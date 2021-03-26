@@ -6,6 +6,7 @@ import SearchByCity from "./pages/SearchByCity/SearchByCity";
 import { SearchByCityResaults } from "./pages/SearchByCityResaults";
 import SearchByCountry from "./pages/SearchByCountry/SearchByCountry";
 import { SearchByCountryResaults } from "./pages/SearchByCountryResaults";
+import "./pages/styling.css";
 
 class App extends Component {
   state = {};
@@ -13,7 +14,9 @@ class App extends Component {
     return (
       <React.Fragment>
         <Router>
-          <Title />
+          <div className="center2">
+            <Title />
+          </div>
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/searchbycity" component={SearchByCity} />

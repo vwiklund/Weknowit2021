@@ -1,0 +1,9 @@
+.center {
+  text-align: center;
+  border: 3px #ccc solid;
+  min-height: 100vh;
+}
+.center2 {
+  border: 3px #ccc solid;
+  height: 40vh;
+}
