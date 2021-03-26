@@ -1,9 +1,10 @@
 import React, { Component } from "react";
+import MyForm from "../../components/MyForm/MyForm";
 
 class SearchByCountry extends Component {
   state = {};
   render() {
-    return <h1>SBC</h1>;
+    return <MyForm ph="Enter a country" />;
   }
 }
 
