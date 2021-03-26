@@ -1,4 +1,6 @@
-# Packages used in this project
+# Work test for weknowit 2021
+
+## This project used following packages
 
 ## npm install
 
