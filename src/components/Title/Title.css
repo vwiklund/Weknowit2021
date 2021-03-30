@@ -1,4 +1,16 @@
 .Title {
-  text-align: center;
-  border: 3px #ccc solid;
+  /* title shown in Homepage */
+  display: flex;
+  flex: 1;
+  height: 20vh;
+  flex-direction: column-reverse;
+  align-items: CENTER;
+}
+
+.Center {
+  /* Centers component */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

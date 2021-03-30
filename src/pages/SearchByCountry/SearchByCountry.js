@@ -67,7 +67,6 @@ class SearchByCountry extends Component {
         loading: false,
       });
     }
-    console.log(data.geonames);
   };
   render() {
     return (

@@ -1,9 +1,30 @@
 .center {
-  text-align: center;
+  display: flex;
+  justify-content: center;
   border: 3px #ccc solid;
-  min-height: 100vh;
 }
 .center2 {
+  display: flex;
+  justify-content: center;
   border: 3px #ccc solid;
+  flex-direction: column-reverse;
+}
+.Title1 {
+  /* title shown in Homepage */
+  display: flex;
+  flex: 1;
   height: 40vh;
+  flex-direction: row;
+  align-items: CENTER;
+}
+.Subtitle {
+  /* Subtitle used in Searchbycountry, Searchbycity */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.container {
+  /* conatiner: used in myform, searchbycity, searchbycountry, Home */
+  display: flex;
+  justify-content: center;
 }

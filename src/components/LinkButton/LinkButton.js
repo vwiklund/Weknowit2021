@@ -4,9 +4,11 @@ import "./LinkButton.css";
 
 const LinkButton = (props) => {
   return (
-    <Link to={props.to}>
-      <button className="LinkButton">{props.ph}</button>
-    </Link>
+    <div className="container2">
+      <Link to={props.to}>
+        <button className="LinkButton">{props.ph}</button>
+      </Link>
+    </div>
   );
 };
 export default LinkButton;

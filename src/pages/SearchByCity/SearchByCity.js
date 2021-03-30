@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import MyForm from "../../components/MyForm/MyForm";
 import testForErrorCity from "./testForErrorCity";
 import RedirectSearchByCity from "./RedirectSearchByCity";
+import "../styling.css";
+import ClipLoader from "react-spinners/ClipLoader";
 
 const API_KEY = "weknowit"; //Apikey for geonames.org
 
@@ -18,6 +20,7 @@ class SearchByCity extends Component {
     e.preventDefault();
     this.setState({
       loading: true,
+      error: false,
     });
     const input = e.target.elements.input.value; //Get input from MyForm on submit
     const api_call = await fetch(
@@ -44,12 +47,17 @@ class SearchByCity extends Component {
   render() {
     return (
       <div>
-        <header>
-          <b>SEARCH BY CITY</b>
-
-          <div>{this.state.loading && <h1>laddar</h1>}</div>
-        </header>
-        <MyForm ph="Enter a country" onSubmit={this.getPopulation} />
+        <div className="center">
+          <header>
+            <b>SEARCH BY CITY</b>
+          </header>
+        </div>
+        <div className="center">
+          <MyForm ph="Enter a country" onSubmit={this.getPopulation} />
+        </div>
+        <div className="center">
+          <div>{this.state.loading && <ClipLoader size={50} />}</div>
+        </div>
         <RedirectSearchByCity
           error={this.state.error}
           city={this.state.city}
