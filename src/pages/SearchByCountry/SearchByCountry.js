@@ -3,6 +3,8 @@ import MyForm from "../../components/MyForm/MyForm";
 import testForErrorCountry from "./testForErrorCountry";
 import getCities from "./getCities";
 import RedirectSearchByCountry from "../SearchByCountry/RedirectSearchByCountry";
+import ClipLoader from "react-spinners/ClipLoader";
+import "../styling.css";
 
 const API_KEY = "weknowit"; //ApiKey for url
 
@@ -71,17 +73,22 @@ class SearchByCountry extends Component {
   render() {
     return (
       <div>
-        <header>
-          <b>SEARCH BY COUNTRY</b>
-
-          <div>{this.state.loading && <h1>laddar</h1>}</div>
-        </header>
-        <MyForm ph="Enter a country" onSubmit={this.getPopulation} />
+        <div className="center">
+          <header>
+            <b>SEARCH BY COUNTRY</b>
+          </header>
+        </div>
+        <div className="center">
+          <MyForm ph="Enter a country" onSubmit={this.getPopulation} />
+        </div>
+        <div className="center">
+          <div>{this.state.loading && <ClipLoader size={50} />}</div>
+        </div>
         <RedirectSearchByCountry
           error={this.state.error}
+          country={this.state.city}
           city={this.state.city}
           population={this.state.population}
-          country={this.state.country}
         />
       </div>
     );

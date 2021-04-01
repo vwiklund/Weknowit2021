@@ -1,13 +1,16 @@
 .center {
   display: flex;
   justify-content: center;
-  border: 3px #ccc solid;
 }
 .center2 {
   display: flex;
   justify-content: center;
-  border: 3px #ccc solid;
   flex-direction: column-reverse;
+}
+.centerColumn {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .Title1 {
   /* title shown in Homepage */
@@ -27,4 +30,16 @@
   /* conatiner: used in myform, searchbycity, searchbycountry, Home */
   display: flex;
   justify-content: center;
+}
+.container2 {
+  /* conatiner: used in myform, searchbycity, searchbycountry, Home */
+  display: flex;
+  justify-content: center;
+}
+.resaultsContainer {
+  /* conatiner: used in myform, searchbycity, searchbycountry, Home */
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  border: 3px #ccc solid;
 }

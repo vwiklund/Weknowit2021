@@ -1,2 +1,25 @@
+.center {
+  display: flex;
+  justify-content: center;
+}
+.container2 {
+  /* container2: used in searchbycityresaults */
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  max-width: 400px;
+}
 .MyForm {
+  /* input used in Myform */
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1em;
+  border: 0.15em solid #808080;
+  border-radius: 0em;
+  text-align: center;
+}
+.Button {
+  background-color: white;
+  border-color: black;
+  cursor: pointer;
 }
