@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Title.css";
+import "./title.css";
 
 export const Title = () => (
-  <div className="Title">
+  <div className="title">
     <Link to="/" style={{ color: "black" }}>
       <h1>CityPop</h1>
     </Link>

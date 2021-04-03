@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import LinkButton from "../components/LinkButton/LinkButton";
 import "./styling.css";
 
+//Renders the resaultspage for search by country with linkbuttons
 export const SearchByCountryResaults = (props) => (
   <div>
     <div className="Subtitle">

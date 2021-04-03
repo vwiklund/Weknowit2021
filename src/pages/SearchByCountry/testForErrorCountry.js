@@ -1,5 +1,5 @@
 function testForErrorCountry(input, data) {
-  // format input to capitalize first letter and insert %20 instead of blank space to use in api call
+  //Function that test data provided for error
   var error = "";
   if (input === "") {
     error = "please enter a country...";

@@ -4,7 +4,7 @@ import "./styling.css";
 
 export const Home = () => (
   <div className="center">
-    <LinkButton to="/searchbycity" ph="Searrch by city" />
-    <LinkButton to="/searchbycountry" ph="Searrch by country" />
+    <LinkButton to="/searchbycity" ph="Search by city" />
+    <LinkButton to="/searchbycountry" ph="Search by country" />
   </div>
 );

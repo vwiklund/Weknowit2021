@@ -70,10 +70,11 @@ class SearchByCountry extends Component {
       });
     }
   };
+  //Renders search by resaults page
   render() {
     return (
       <div>
-        <div className="center">
+        <div className="subtitle">
           <header>
             <b>SEARCH BY COUNTRY</b>
           </header>

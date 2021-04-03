@@ -1,54 +1,16 @@
+/* Basic CSS styling for pages */
 .center {
+  /* Centering components */
   display: flex;
   justify-content: center;
 }
-.center2 {
-  display: flex;
-  justify-content: center;
-  flex-direction: column-reverse;
-}
-.centerColumn {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-.Title1 {
-  /* title shown in Homepage */
-  display: flex;
-  flex: 1;
-  height: 40vh;
-  flex-direction: row;
-  align-items: CENTER;
-}
-.Subtitle {
+.subtitle {
   /* Subtitle used in Searchbycountry, Searchbycity */
   display: flex;
   justify-content: center;
-  padding: 5vh 5vh;
-  border: 3px #ccc solid;
-}
-.container {
-  /* conatiner: used in myform, searchbycity, searchbycountry, Home */
-  display: flex;
-  justify-content: center;
-}
-.container2 {
-  /* conatiner: used in myform, searchbycity, searchbycountry, Home */
-  display: flex;
-  justify-content: center;
-}
-.resaultsContainer {
-  /* conatiner: used in myform, searchbycity, searchbycountry, Home */
-  width: 45%;
-  display: flex;
-  justify-content: center;
-  border: 3px #ccc solid;
+  padding: 4vh 4vh;
 }
 .showborder {
-  border: 3px #ccc solid;
-}
-.resaultsContainer2 {
-  /* conatiner: used in myform, searchbycity, searchbycountry, Home */
-  width: 100%;
+  /* Used do display borders when making the design */
   border: 3px #ccc solid;
 }

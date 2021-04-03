@@ -47,7 +47,7 @@ class SearchByCity extends Component {
   render() {
     return (
       <div>
-        <div className="center">
+        <div className="subtitle">
           <header>
             <b>SEARCH BY CITY</b>
           </header>

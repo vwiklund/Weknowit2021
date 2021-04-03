@@ -1,13 +1,15 @@
-.LinkButton {
+.linkButton {
+  /* CSS for LinkButton */
   background-color: white;
   padding: 30px 30px;
   cursor: pointer;
   width: 100%;
   height: 100%;
 }
-.container2 {
-  /* container2: used in searchbycityresaults */
+.containerLinkButton {
+  /* container for LinkButton */
   display: flex;
   flex-direction: column;
   width: 35%;
+  padding: 0vh 1vh;
 }

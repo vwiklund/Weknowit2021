@@ -1,4 +1,5 @@
 function getCities(data) {
+  //Funcion that returns the 3 biggest cities from jsondata provided from api call
   const Cities = [undefined, undefined, undefined];
   let i = 0;
   let j = 0;
@@ -17,16 +18,3 @@ function getCities(data) {
   return Cities;
 }
 export default getCities;
-
-/* let i = 0;
-        let j = 0;
-        const Cities = [undefined, undefined, undefined];
-        while (i < 3) {
-          if (data2.geonames[j].fclName.split(",")[0] === "city") {
-            Cities[i] = data2.geonames[j];
-            i++;
-            console.log(j);
-          }
-  
-          j++;
-        } */

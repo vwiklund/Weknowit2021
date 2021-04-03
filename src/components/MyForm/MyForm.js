@@ -1,20 +1,20 @@
 import React from "react";
-import "./MyForm.css";
+import "./myForm.css";
 import { IoMdSearch } from "react-icons/io";
 
 const MyForm = (props) => {
   return (
-    <div className="container2">
+    <div className="containerMyForm">
       <form onSubmit={props.onSubmit}>
         <input
-          className="MyForm"
+          className="myForm"
           type="text"
           name="input"
           placeholder={props.ph}
         />
 
         <div className="center">
-          <button className="Button">
+          <button className="button">
             <b>
               <IoMdSearch size="30" />
             </b>

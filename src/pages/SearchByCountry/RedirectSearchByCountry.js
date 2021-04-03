@@ -4,7 +4,11 @@ import { Redirect } from "react-router-dom";
 //evaluating population resaults for searchbycity
 const RedirectSearchByCountry = (props) => (
   <div>
-    {props.error && <p className="weather__error">{props.error}</p>}
+    {props.error && (
+      <div className="center">
+        <p className="weather__error">{props.error}</p>
+      </div>
+    )}
     {props.population && (
       <Redirect
         to={{
