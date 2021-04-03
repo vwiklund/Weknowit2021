@@ -1,11 +1,22 @@
 import React from "react";
 import "./styling.css";
 export const SearchByCityResaults = (props) => (
-  <div className="center">
-    <div className="resaultsContainer">
-      <div className="centerColumn">
-        <p className="center">{props.location.state.city}</p>
-        <h1 className="center">{props.location.state.population}</h1>
+  <div>
+    <div className="Subtitle">
+      <header>
+        <b>{props.location.state.city}</b>
+      </header>
+    </div>
+    <div className="center">
+      <div className="resaultsContainer">
+        <div>
+          <div className="center">
+            <p>population:</p>
+          </div>
+          <div className="center">
+            <h1>{props.location.state.population}</h1>
+          </div>
+        </div>
       </div>
     </div>
   </div>

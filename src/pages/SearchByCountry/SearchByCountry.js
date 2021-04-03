@@ -86,7 +86,7 @@ class SearchByCountry extends Component {
         </div>
         <RedirectSearchByCountry
           error={this.state.error}
-          country={this.state.city}
+          country={this.state.country}
           city={this.state.city}
           population={this.state.population}
         />

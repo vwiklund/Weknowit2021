@@ -23,8 +23,9 @@
 .Subtitle {
   /* Subtitle used in Searchbycountry, Searchbycity */
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  justify-content: center;
+  padding: 5vh 5vh;
+  border: 3px #ccc solid;
 }
 .container {
   /* conatiner: used in myform, searchbycity, searchbycountry, Home */
@@ -41,5 +42,13 @@
   width: 45%;
   display: flex;
   justify-content: center;
+  border: 3px #ccc solid;
+}
+.showborder {
+  border: 3px #ccc solid;
+}
+.resaultsContainer2 {
+  /* conatiner: used in myform, searchbycity, searchbycountry, Home */
+  width: 100%;
   border: 3px #ccc solid;
 }
