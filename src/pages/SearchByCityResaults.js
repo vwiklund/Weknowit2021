@@ -1,8 +1,10 @@
 import React from "react";
 import "./styling.css";
+
+//Renders the resaultspage for search by city
 export const SearchByCityResaults = (props) => (
   <div>
-    <div className="Subtitle">
+    <div className="subtitle">
       <header>
         <b>{props.location.state.city}</b>
       </header>

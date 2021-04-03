@@ -1,6 +1,5 @@
-/* Basic CSS styling for pages */
 .center {
-  /* Centering components */
+  /* centering components */
   display: flex;
   justify-content: center;
 }
@@ -10,7 +9,13 @@
   justify-content: center;
   padding: 4vh 4vh;
 }
+.resaultsContainer {
+  /* conatiner: used in myform, searchbycity, searchbycountry, Home */
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  border: 2px rgb(5, 0, 0) solid;
+}
 .showborder {
-  /* Used do display borders when making the design */
   border: 3px #ccc solid;
 }

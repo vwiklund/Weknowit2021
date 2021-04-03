@@ -44,6 +44,7 @@ class SearchByCity extends Component {
       });
     }
   };
+  //Renders the searchbycity page
   render() {
     return (
       <div>

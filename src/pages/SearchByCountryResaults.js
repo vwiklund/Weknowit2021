@@ -6,7 +6,7 @@ import "./styling.css";
 //Renders the resaultspage for search by country with linkbuttons
 export const SearchByCountryResaults = (props) => (
   <div>
-    <div className="Subtitle">
+    <div className="subtitle">
       <header>
         <b>{props.location.state.country}</b>
       </header>
