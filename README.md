@@ -1,4 +1,4 @@
-# Work test for weknowit 2021. To run this on mac, open terminal and type
+# Work test for weknowit 2021. To run this you need to install nodejs from https://nodejs.org/en/download/ then open terminal and type:
 
 ## git clone https://github.com/vwiklund/weknowit2021.git
 
