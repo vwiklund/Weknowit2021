@@ -28,28 +28,19 @@ class SearchByCountry extends Component {
       //Apicall searching specific for countries.
     );
     const data = await api_call.json(); //format to .json()
-    console.log(data.geonames);
 
     const error = testForErrorCountry(input, data);
     //Testing input with searchdata provided to check for errors
     if (!error) {
       //If no error found, proceed with a second apicall searching for cities sorted by population
-      console.log(data.geonames[0].countryName);
-      console.log("poop = " + data.geonames[0].population);
-      console.log("city = " + data.geonames[0].name);
-      console.log("type = " + data.geonames[0].fclName.split(",")[0]);
-      console.log("country = " + data.geonames[0].countryName);
 
       const countryCode = data.geonames[0].countryCode;
-      console.log("Country code = " + countryCode);
-
       const api_call2 = await fetch(
         `http://api.geonames.org/searchJSON?q=${data.geonames[0].countryName}&cities=cities1000&maxRows=5&orderby=population&country=${countryCode}&style=LONG&lang=eng&username=${API_KEY}`
         //`http://api.geonames.org/searchJSON?q=${input}&orderby=population&maxRows=500&style=LONG&lang=eng&username=${API_KEY}`
       );
 
       const data2 = await api_call2.json(); //format to .json()
-      console.log(data2.geonames);
 
       const Cities = getCities(data2); //returning the three most populated cities for searched country
 

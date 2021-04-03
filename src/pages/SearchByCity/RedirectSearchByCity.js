@@ -2,7 +2,7 @@ import React from "react";
 import { Redirect } from "react-router-dom";
 import "../styling.css";
 
-//evaluating states and rredirecting to resaultspage or render error
+//evaluating states and redirecting to resaultspage or render error
 const RedirectSearchByCity = (props) => (
   <div>
     {props.error && (

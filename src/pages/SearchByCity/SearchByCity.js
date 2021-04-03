@@ -27,7 +27,7 @@ class SearchByCity extends Component {
       `http://api.geonames.org/searchJSON?q=${input}&maxRows=10&featureClass=P&username=${API_KEY}`
     );
     const data = await api_call.json(); //format to .json()
-    console.log(data.geonames);
+
     const error = testForErrorCity(input, data); //Testing recieved data for errors
 
     //Setting states based on data from apicall

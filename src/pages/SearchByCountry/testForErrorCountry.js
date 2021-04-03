@@ -12,7 +12,6 @@ function testForErrorCountry(input, data) {
     let i = 1;
     while (i < data.geonames.length) {
       if (data.geonames[i].fclName.split(",")[0] === "country") {
-        console.log(i);
         error = "did you mean " + data.geonames[i].countryName;
       }
       i++;

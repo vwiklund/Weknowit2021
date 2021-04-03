@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import LinkButton from "../components/LinkButton/LinkButton";
 import "./styling.css";
 
