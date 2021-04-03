@@ -1,12 +1,14 @@
-# Work test for weknowit 2021
+# Work test for weknowit 2021. To run this on mac, open terminal and type
 
-## This project used following packages
+## git clone https://github.com/vwiklund/weknowit2021.git
+
+## cd weknowit2021
 
 ## npm install
 
 ## npm install react-router-dom
 
-## npm install --save react-spinners
+## npm start
 
 # Getting Started with Create React App
 
