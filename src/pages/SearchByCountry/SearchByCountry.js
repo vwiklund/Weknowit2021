@@ -28,7 +28,7 @@ class SearchByCountry extends Component {
       //Apicall searching specific for countries.
     );
     const data = await api_call.json(); //format to .json()
-
+    console.log(data);
     const error = testForErrorCountry(input, data);
     //Testing input with searchdata provided to check for errors
     if (!error) {
@@ -36,8 +36,8 @@ class SearchByCountry extends Component {
 
       const countryCode = data.geonames[0].countryCode;
       const api_call2 = await fetch(
+        //Apicall specific to search for cities sorted by population with fix countrycode
         `http://api.geonames.org/searchJSON?q=${data.geonames[0].countryName}&cities=cities1000&maxRows=5&orderby=population&country=${countryCode}&style=LONG&lang=eng&username=${API_KEY}`
-        //`http://api.geonames.org/searchJSON?q=${input}&orderby=population&maxRows=500&style=LONG&lang=eng&username=${API_KEY}`
       );
 
       const data2 = await api_call2.json(); //format to .json()

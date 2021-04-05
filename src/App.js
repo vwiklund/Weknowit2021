@@ -6,6 +6,7 @@ import SearchByCity from "./pages/SearchByCity/SearchByCity";
 import { SearchByCityResaults } from "./pages/SearchByCityResaults";
 import SearchByCountry from "./pages/SearchByCountry/SearchByCountry";
 import { SearchByCountryResaults } from "./pages/SearchByCountryResaults";
+import { NoMatch } from "./pages/NoMatch";
 
 class App extends Component {
   state = {};
@@ -28,6 +29,7 @@ class App extends Component {
               path="/searchbycountryresaults"
               component={SearchByCountryResaults}
             />
+            <Route component={NoMatch} />
           </Switch>
         </Router>
       </React.Fragment>

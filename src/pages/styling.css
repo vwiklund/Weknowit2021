@@ -10,12 +10,9 @@
   padding: 4vh 4vh;
 }
 .resaultsContainer {
-  /* conatiner: used in myform, searchbycity, searchbycountry, Home */
+  /* conatiner: used in SearchByCityResaults */
   width: 45%;
   display: flex;
   justify-content: center;
   border: 2px rgb(5, 0, 0) solid;
-}
-.showborder {
-  border: 3px #ccc solid;
 }

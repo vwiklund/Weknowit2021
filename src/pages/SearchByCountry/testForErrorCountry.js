@@ -1,7 +1,7 @@
 function testForErrorCountry(input, data) {
   //Function that test data provided for error
   var error = "";
-  if (input === "") {
+  if (!input.trim()) {
     error = "please enter a country...";
   } else if (!data.geonames) {
     error = "Could not fetch data from server, please try again later ";
